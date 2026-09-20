@@ -12,6 +12,8 @@ This package includes all the binaries and models required. It is portable, so n
 
 ## Usages
 
+**WARNING! : To use it, a minimum of 16GB RAM / 6GB VRAM (in FP16 mode) is required.**
+
 Input video, or directory name containing two or more images, output interpolated video or image sequence.
 
 ### Example Commands
