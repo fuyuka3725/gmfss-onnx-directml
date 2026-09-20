@@ -37,7 +37,7 @@ usage: gmfss-onnx-directml.exe [-h] (-n TOTAL_FRAMES | -x MULTIPLIER) [-c] [--fp
 --model-dir         Folder containing the extracted models-v1.0 release. (default: models)
 
 -S                  Use image sequence mode. (ex: gmfss-onnx-ml input_dir output_dir [argument...])
---digits [Number]   Sequence mode only, output filename digit count. (default: 8)
+--digits [number]   Sequence mode only, output filename digit count. (default: 8)
 ```
 
 ## Build from Source
@@ -61,10 +61,24 @@ pip install pillow
 
 ### Original Image
 
+<img width="540" height="320" alt="02" src="https://github.com/user-attachments/assets/61476b89-8ebe-452f-8757-f306be66676c" />
+
+<img width="540" height="320" alt="01" src="https://github.com/user-attachments/assets/fc8b1a8f-3fc6-44d5-9b6e-36e483186b07" />
+
 ### Interpolate with gmfss
 
+<img width="540" height="320" alt="gmfss" src="https://github.com/user-attachments/assets/462df687-a488-4dbd-9854-e5c76680c94b" />
+
 ```shell
-gmfss-onnx-directml.py input_dir output_dir -x 2 -S --fp16
+gmfss-onnx-directml input_dir output_dir -x 2 -S --fp16
+```
+
+### Interpolate with rife-v4.25-heavy
+
+<img width="540" height="320" alt="rife-v4 25-heavy" src="https://github.com/user-attachments/assets/52f7cad6-1c2d-4cd6-b356-df97bc914093" />
+
+```shell
+rife-ncnn-vulkan -0 input0 -1 input1 -m rife-v4.25-heavy -o output
 ```
 
 ## Credits
