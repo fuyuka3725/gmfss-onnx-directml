@@ -55,9 +55,11 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 pip install onnxruntime-directml opencv-python numpy
 pip install pillow
 
-4. Test `.venv\Scripts\python.exe gmfss-onnx-directml.py input.mp4 output.mp4 [argument...]`
+4. Download Models https://github.com/santiquiroz/port-gmfss-onnx/releases
 
-5. build `pyinstaller --onefile --clean --strip --collect-all onnxruntime --collect-all cv2 --collect-all PIL --add-data "driver/kernels/splat.cl;driver/kernels" gmfss-onnx-directml.py`
+5. Test `.venv\Scripts\python.exe gmfss-onnx-directml.py input.mp4 output.mp4 [argument...]`
+
+6. build `pyinstaller --onefile --clean --strip --collect-all onnxruntime --collect-all cv2 --collect-all PIL --add-data "driver/kernels/splat.cl;driver/kernels" gmfss-onnx-directml.py`
 
 ## Sample Images
 
