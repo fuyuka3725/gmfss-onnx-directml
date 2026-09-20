@@ -56,7 +56,7 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 pip install onnxruntime-directml opencv-python numpy
 pip install pillow
 ```
-4. Download Models https://github.com/santiquiroz/port-gmfss-onnx/releases
+4. Download Models (https://github.com/santiquiroz/port-gmfss-onnx/releases), Create a `models` directory and place model files into the folder.
 
 5. Test `.venv\Scripts\python.exe gmfss-onnx-directml.py input.mp4 output.mp4 [argument...]`
 
