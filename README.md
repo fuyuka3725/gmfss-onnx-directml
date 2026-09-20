@@ -16,6 +16,8 @@ This package includes all the binaries and models required. It is portable, so n
 
 Input video, or directory name containing two or more images, output interpolated video or image sequence.
 
+It can interpolate up to a resolution of 1920x1088.
+
 ### Example Commands
 
 ```cmd
