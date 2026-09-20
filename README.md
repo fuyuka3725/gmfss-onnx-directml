@@ -49,12 +49,13 @@ usage: gmfss-onnx-directml.exe [-h] (-n TOTAL_FRAMES | -x MULTIPLIER) [-c] [--fp
 2. Creating a Virtual Environment `python -m venv .venv`, and settings `.venv\Scripts\activate.bat`
 
 3. Install the required package:
+```
 python -m pip install --upgrade pip
 pip install pyinstaller
 pip install torch --index-url https://download.pytorch.org/whl/cpu
 pip install onnxruntime-directml opencv-python numpy
 pip install pillow
-
+```
 4. Download Models https://github.com/santiquiroz/port-gmfss-onnx/releases
 
 5. Test `.venv\Scripts\python.exe gmfss-onnx-directml.py input.mp4 output.mp4 [argument...]`
